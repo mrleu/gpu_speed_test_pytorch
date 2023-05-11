@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gpu-speed-test-pytorch"
+version = "0.1.0"
+description = ""
+authors = ["Alex Leu <mr.leu@ucla.edu>"]
+readme = "README.md"
+packages = [{include = "gpu_speed_test_pytorch"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+torchvision = "^0.15.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
